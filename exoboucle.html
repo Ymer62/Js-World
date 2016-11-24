@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="exoboucle.css" media="screen" title="no title">
+    <title>exoboucle</title>
+  </head>
+  <body>
+
+    <h1>Comment se comporte votre mot :</h1>
+  <div id="tableau">
+    <table id="tab">
+      <tr>
+        <td id="envoie" colspan="3">
+          <p><input type="text" name= "bouton" id="motsaisie"></input></p>
+          <p><input type="submit" name="bouton" onclick="action()" value="GO"></p>
+        </td>
+      </tr>
+
+      <tr id="lig1">
+        <td> <p>Mot Saisie :</p> </td>
+        <td class="td2" id="mot_norm" colspan="2"></td>
+      </tr>
+
+      <tr>
+        <td><p>Minuscule / Majuscule :</p></td>
+        <td class="td1" id="minu"></td>
+        <td class="td1" id="maju"></td>
+      </tr>
+
+      <tr>
+        <td><p>Combien il y a de voyelle(s) / consonne(s) :</p></td>
+        <td class="td1" id="nvoy"></td>
+        <td  class="td1" id="ncons"></td>
+      </tr>
+
+      <tr>
+        <td><p>Votre mot inverser :</p></td>
+        <td class="td2" id="motinvers" colspan="2"></td>
+      </tr>
+
+      <tr>
+        <td><p>votre mot est il un palindrome? :</p></td>
+        <td class="td2"id="palindrome" colspan="2"></td>
+      </tr>
+
+    </table>
+
+    <div id="histo">
+      <div id="div1"><p>historique</p></div>
+      <div id="histo1"></div>
+    </div>
+
+    </div>
+
+    <p><input type="submit" value="Reset" onclick="reset()"></p>
+
+    <script src="exoboucle.js"></script>
+  </body>
+</html>
